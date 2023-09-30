@@ -1,4 +1,4 @@
-console.dir(document);
+ console.dir(document);
 console.log(document.URL);
 console.log(document.title);
 console.log(document.fullscreenEnabled);
@@ -13,4 +13,13 @@ var header = document.getElementById('main-header');
 headerTitle.textContent = 'HELLOW SHARPENER';
 //headerTitle.innerText = 'WELCOME';
 header.style.borderBottom = 'solid 3px #000';
-headerTitle.style.color= 'yellow';
+headerTitle.style.color= 'yellow'; 
+var items = document.getElementsByClassName('list-group-item');
+
+console.log(items);
+console.log(items[2]);
+items[2].style.backgroundColor = 'green';
+
+for(var i=0; i<items.length; i++){
+    items[i].style.fontWeight = 'bold';
+}
