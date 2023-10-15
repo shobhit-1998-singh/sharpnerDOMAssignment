@@ -43,6 +43,15 @@
             localStorage.setItem('email', email);
             localStorage.setItem('phonenumber', phonenumber);
             localStorage.setItem('datentime', datenTime);
+
+            const obj ={
+                name,
+                email,
+                phonenumber,
+                datenTime,
+
+            }
+            localStorage.setItem('userDetail', JSON.stringify(obj));
         }
     </script>
   
